@@ -1,9 +1,12 @@
 
 # Jenkins Declarative CI/CD Pipeline
+![CICD](https://github.com/user-attachments/assets/63bacf8a-96b3-4839-9aa9-8aa29ef20d4d)
 
 Welcome to the Jenkins Declarative CI/CD Pipeline repository! This project demonstrates how to set up a CI/CD pipeline using Jenkins for Docker image building, pushing to Docker Hub, and deploying to an EC2 instance.
 
 ## Project Overview
+
+
 
 This repository contains a Jenkins Declarative Pipeline that automates the following processes:
 
