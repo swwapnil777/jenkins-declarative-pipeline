@@ -27,12 +27,17 @@ pipeline {
             }
         }
         
+        stage("Cleanup") {
+            steps {
+                echo "Cleaning up old Docker images"
+                sh "docker image prune -f"
+            }
+        }
+        
         stage("Deploy") {
             steps {
                 echo "Deploying the container"
-                // Add your deployment commands here
-                sh "docker compose down && docker compose up -d"
-                
+                sh "docker compose down --remove-orphans && docker compose up -d"
             }
         }
     }
