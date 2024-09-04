@@ -1,6 +1,6 @@
 version : "3.3"
 services :
   web :
-     image : swapnilkhatik777437/notes-app-jenkins
+     image : swapnilkhatik777437/notes-app
      ports :
          - "8000:8000"  
